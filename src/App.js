@@ -12,6 +12,7 @@ function App() {
     e.preventDefault();
     axios.get(`https://api.shrtco.de/v2/shorten?url=${url}`).then((res)=>{
       setShortUrl(res.data.result.short_link)
+      setUrl("")
     }).catch((err)=>{
       alert(err)
     })
