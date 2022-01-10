@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+.App{
+  object-fit: contain;
+width: 1400px;
+height: 700px;
+background: url(back.jpg) no-repeat center center fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputBox{
+  position: absolute;
+width: 464px;
+height: 40px;
+left: 468px;
+top: 241px;
+background: #F7D55C;
+border-radius: 8px;
+padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.responseBox{
+  position: absolute;
+width: 464px;
+height: 40px;
+left: 418px;
+top: 351px;
+border-radius: 8px !important;
+
+/* background: #76f75c;
+border-radius: 8px; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.submitBox{
+  position: absolute;
+width: 164px;
+height: 40px;
+left: 623px;
+top: 318px;
+
+background: #0679FF;
+border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+.input_copy_wrapper{
+  width: 475px;
+  padding: 50px;
+  margin : 0 auto;
+}
+.input_copy {
+    padding: 15px 25px;
+    background: #eee;
+    border: 2px solid #aaa;
+    color: #aaa;
+    font-size: .8em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input_copy .icon {
+    display: block;
+    max-width: 25px;
+    cursor: pointer;
+    float: right;
 }
+
+.input_copy .icon img{
+  max-width: 25px;
+}
+.input_copy .txt {
+    width: 80%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+/* click animation */
+
+.flashBG {
+    animation-name: flash;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+}
+
+@keyframes flash {
+    0% {
+        background: #28a745;
+    }
+    100% {
+        background: transparent;
+    }
+}
+
