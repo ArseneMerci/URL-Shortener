@@ -11,7 +11,7 @@ width: 464px;
 height: 40px;
 left: 468px;
 top: 241px;
-background: #F7D55C;
+background: #f7ecc4;
 border-radius: 8px;
 padding: 5px;
 }
@@ -51,7 +51,7 @@ border-radius: 8px;
     padding: 15px 25px;
     background: #eee;
     border: 2px solid #aaa;
-    color: #aaa;
+    color: rgb(19, 18, 18);
     font-size: .8em;
 }
 
